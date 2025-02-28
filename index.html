@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Brian</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("UTdXs-PnlxVC90AUO"); // Replace with your actual Public Key from EmailJS
+        })();
+    </script>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brian Mbithi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section id="home">
+        <div class="container-fluid">
+        <div class="text">
+            <h1>Hi, I'm Brian Mbithi</h1>
+            <p>Web Developer | Laravel | Vue.js | Computer Science Graduate</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+        </div>
+    </section>
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/brian.jpg" class="imageAboutPage" alt="Profile Picture of Brian Mbithi">
+                </div>
+    
+                <div class="col-lg-8">
+                    <p>Hello! My name is Brian Mbithi, a passionate 22-year-old web developer with a computer science degree. I specialize in creating responsive, user-friendly web applications using technologies like HTML, CSS, Bootstrap, Laravel, and Vue.js. My goal is to build impactful digital solutions that deliver great user experiences and meet modern web development standards.</p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-user"></i> Name: Brian Mbithi</li>
+                                <li><i class="fas fa-birthday-cake"></i> Age: 22</li>
+                                <li><i class="fas fa-laptop-code"></i> Occupation: Web Developer</li>
+                                <li><i class="fas fa-graduation-cap"></i> Degree: Computer Science</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Specializations:</li>
+                                <li>HTML & CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Laravel</li>
+                                <li>Vue.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p>I'm currently focused on building my portfolio to showcase my skills and experience. I love tackling new challenges and staying up-to-date with the latest web development trends. Feel free to explore my work or reach out if you'd like to collaborate!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Website Development</h4>
+                            <p class="card-text mt-3">I offer professional website development services to help you build a strong online presence. From simple landing pages to complex web applications, I ensure your website is fast, secure, and scalable.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Website Design</h4>
+                            <p class="card-text mt-3">I provide creative and modern website design services to make your website visually appealing and user-friendly. My designs are tailored to meet your brand's identity and ensure a seamless user experience.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Website Deployment</h4>
+                            <p class="card-text mt-3">I offer comprehensive website deployment services using Laravel and Vue.js. From setting up servers to configuring databases, I ensure your website is deployed efficiently and securely.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3">IT/ICT Support</h4>
+                            <p class="card-text mt-3">I provide reliable IT/ICT support services to ensure your technology infrastructure runs smoothly. From troubleshooting issues to maintaining systems, I offer comprehensive support to keep your operations running efficiently.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">DevOps</h4>
+                            <p class="card-text mt-3">I offer DevOps services to streamline your development and operations processes. By implementing continuous integration and continuous deployment (CI/CD) practices, I help you achieve faster and more reliable software delivery.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">QA</h4>
+                            <p class="card-text mt-3">I provide quality assurance (QA) services to ensure your software meets the highest standards. From manual testing to automated testing, I help you identify and fix issues before they reach your users.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/sent1.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Customer Feedback Sentiment Analysis</h4>
+                            <p class="card-text">A web application that analyzes the sentiments of restaurant customers' feedback using machine learning. This tool helps restaurant owners understand customer satisfaction and improve their services based on the feedback received.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/mbithi69/sentiment-analysis-for-restaurants-reviews" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/qrcode.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">QR Code Digital Business Card</h4>
+                            <p class="card-text">A QR code-based digital business card that allows you to share your contact information quickly and easily. Simply scan the QR code to save the contact details directly to your phone. This modern solution eliminates the need for physical business cards and ensures your information is always up-to-date.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/mbithi69/itsme" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/crud.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Simple CRUD implimentation</h4>
+                            <p class="card-text">A web application demonstrating the implementation of Create, Read, Update, and Delete (CRUD) operations. It highlights the importance of CRUD functionality in managing business data efficiently, ensuring data integrity, and providing a user-friendly interface for data manipulation.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/mbithi69/CRUD-APP" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/chat.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Real-time Messaging Service</h4>
+                            <p class="card-text">A real-time messaging platform that allows two logged-in users to view each other’s profiles and exchange messages instantly. Built with Laravel, Vue.js, Pusher, and Blade, it delivers a seamless and interactive chat experience with live updates.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/mbithi69/chat-app" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Static Website</h4>
+                            <p class="card-text">A sleek and responsive static website designed for fast performance and smooth user experience. Built using HTML, CSS, and Bootstrap, it features a clean layout and modern design, perfect for showcasing content effectively.</p>
+                            <div class="text-center">
+                                <a href="https://mbithi69.github.io/fixtech/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Blog App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                        <div id="display-google-map" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/search?q=nairobi+kenya&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="the-googlemap-enabler" href="https://www.bootstrapskins.com/themes" id="authmaps-data">premium bootstrap themes</a><style>#display-google-map img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form id="contact-form">
+                        <input type="text" id="name" class="form-control form-control-lg" name="name" placeholder="Name" required>
+                        <input type="email" id="email" class="form-control mt-3" name="email" placeholder="Email" required>
+                        <input type="text" id="subject" class="form-control mt-3" name="subject" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Project Details" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success mt-3">Contact Me</button>
+                    </form>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <!-- footer section-->
+     <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_mb.ithi?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/_Bryan_Mwendwa" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/254705192784" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+</body>
+</html>
